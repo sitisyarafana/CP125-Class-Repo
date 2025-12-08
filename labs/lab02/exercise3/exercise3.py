@@ -6,5 +6,6 @@ def validate_entry(name, pin):
     # Return True if valid, False otherwise
     pass
 
+
 # Test your code here
 print("Testing Secure Vault System...")
