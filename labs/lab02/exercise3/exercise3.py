@@ -4,7 +4,8 @@
 def validate_entry(name, pin):
     # TODO: Implement this function
     # Return True if valid, False otherwise
-    pass
+    
+    name 
 
 
 # Test your code here
