@@ -1,8 +1,14 @@
-# Creating different types of lists
-fruits = ["apple", "banana", "cherry"]
-numbers = [10, 20, 30, 40, 50]
-prices = [19.99, 24.50, 15.00]
+colors = ("red", "green", "blue", "yellow")
 
-print(fruits)
-print(numbers)
-print(prices)
+# Indexing
+print(colors[0])    # red
+print(colors[-1])   # yellow
+
+# Slicing
+print(colors[1:2])  # ('green', 'blue')
+
+# Membership
+print("red" in colors)  # True
+
+# Length
+print(len(colors))  # 4
