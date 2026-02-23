@@ -1,14 +1,8 @@
-colors = ("red", "green", "blue", "yellow")
+for key in menu:                      # Keys only
+    print(key)
 
-# Indexing
-print(colors[0])    # red
-print(colors[-1])   # yellow
+for value in menu.values():           # Values only
+    print(value)
 
-# Slicing
-print(colors[1:2])  # ('green', 'blue')
-
-# Membership
-print("red" in colors)  # True
-
-# Length
-print(len(colors))  # 4
+for key, value in menu.items():       # Both at once
+    print(f"{key}: {value}")

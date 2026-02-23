@@ -1,6 +1,10 @@
 def withdraw(accounts, card_number, amount):
     # TODO: Your code here
-    pass
+    
+    if card_number in accounts:
+        print("Card Not Found")
+
+    if amount > 
 
 
 
