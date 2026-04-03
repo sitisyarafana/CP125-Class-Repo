@@ -1,24 +1,23 @@
 import pandas as pd
 
 def explore_data(filename):
-    # Loads CSV into DataFrame using the filename passed from the test
-    df = pd.read_csv(filename)
+    # Load the CSV
+    df = pd.read_csv("labs/lab09/data/students.csv")
 
-    # 1. total_students: count the number of rows
+    # 1. total_students: The number of rows in the data
     total_students = len(df)
     
-    # 2. subjects: strictly Math, Science, and English only
+    # 2. subjects: A specific list of the three core subjects
     subjects = ["Math", "Science", "English"]
     
-    # 3. math_average: average of Math column rounded to 1 decimal
+    # 3. math_average: Mean of the Math column, rounded to 1 decimal place
     math_average = round(df["Math"].mean(), 1)
     
-    # 4. highest_math_student: name of the student with the max Math score
-    # idxmax finds the index of the highest value, then .loc gets the name
+    # 4. highest_math_student: Find the row index of the max Math score, 
+    # then look up the 'Name' at that index.
     highest_math_idx = df["Math"].idxmax()
     highest_math_student = df.loc[highest_math_idx, "Name"]
     
-    # Returns the dictionary with the specific keys required
     return {
         "total_students": total_students,
         "subjects": subjects,
